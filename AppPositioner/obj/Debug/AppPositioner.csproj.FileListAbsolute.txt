@@ -1,0 +1,10 @@
+E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug\AppPositioner.exe.config
+E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug\AppPositioner.exe.manifest
+E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug\AppPositioner.application
+E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug\AppPositioner.exe
+E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug\AppPositioner.pdb
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.csproj.CoreCompileInputs.cache
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.exe.manifest
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.application
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.exe
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.pdb
