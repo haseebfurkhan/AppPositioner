@@ -8,3 +8,4 @@ E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.exe.manifest
 E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.application
 E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.exe
 E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.pdb
+E:\CoolProjects\AppPositioner\AppPositioner\obj\Debug\AppPositioner.csprojAssemblyReference.cache

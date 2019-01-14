@@ -24,10 +24,8 @@ namespace AppPositioner
         private static extern bool ShowWindow(IntPtr h, int cmd);
 
         static ManagementEventWatcher processStartEvent = new ManagementEventWatcher("SELECT * FROM Win32_ProcessStartTrace");
-        static ManagementEventWatcher processStopEvent = new ManagementEventWatcher("SELECT * FROM Win32_ProcessStopTrace");
-        private const int SWP_NOSIZE = 0x0001;
-        private const int SWP_NOZORDER = 0x0004;
-        private const int SWP_SHOWWINDOW = 0x0040;
+        //static ManagementEventWatcher processStopEvent = new ManagementEventWatcher("SELECT * FROM Win32_ProcessStopTrace");
+    
         public struct Rect
         {
             public int Left { get; set; }
@@ -50,13 +48,14 @@ namespace AppPositioner
 
                 processStartEvent.EventArrived += new EventArrivedEventHandler(processStartEvent_EventArrived);
                 processStartEvent.Start();
-                processStopEvent.EventArrived += new EventArrivedEventHandler(processStopEvent_EventArrived);
-                processStopEvent.Start();
+                //processStopEvent.EventArrived += new EventArrivedEventHandler(processStopEvent_EventArrived);
+                //processStopEvent.Start();
 
                 HideConsole();
 
-                Console.WriteLine("Press any Key to exit...");
-                Console.ReadKey();
+                //Console.WriteLine("Press any Key to exit...");
+                //Console.ReadKey();
+                Application.Run();
             }
             catch (Exception ex)
             {
@@ -118,6 +117,10 @@ namespace AppPositioner
                 }
 
                 throw;
+            }
+            finally
+            {
+                e.NewEvent.Dispose();
             }
         }
 
