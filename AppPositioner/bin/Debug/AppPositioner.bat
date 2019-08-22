@@ -1,3 +1,3 @@
 e:
-cd "E:\CoolProjects\AppPositioner\AppPositioner\bin\Debug"
+cd "E:\CoolProjects\AppPositioner\AppPositioner\AppPositioner\bin\Debug"
 AppPositioner

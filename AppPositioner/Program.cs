@@ -37,6 +37,9 @@ namespace AppPositioner
         public static string MonitorName { get; set; }
         public static int MonitorNumber { get; set; }
         public static string ProgramName { get; set; }
+        public static int Width { get; set; }
+        public static int Height { get; set; }
+        public static bool FullScreen { get; set; }
 
         static void Main(string[] args)
         {
@@ -45,6 +48,9 @@ namespace AppPositioner
                 ProgramName = ConfigurationManager.AppSettings["ProgramName"];
                 MonitorNumber = Convert.ToInt32(ConfigurationManager.AppSettings["MonitorNumber"]);
                 MonitorName = ConfigurationManager.AppSettings["MonitorName"];
+                Width = Convert.ToInt32(ConfigurationManager.AppSettings["Width"]);
+                Height = Convert.ToInt32(ConfigurationManager.AppSettings["Height"]);
+                FullScreen = Convert.ToBoolean(ConfigurationManager.AppSettings["FullScreen"]);
 
                 processStartEvent.EventArrived += new EventArrivedEventHandler(processStartEvent_EventArrived);
                 processStartEvent.Start();
@@ -78,7 +84,7 @@ namespace AppPositioner
                     using (EventLog eventLog = new EventLog("Application"))
                     {
                         eventLog.Source = "Application";
-                        eventLog.WriteEntry($"{ProgramName} started. Repositioning.", EventLogEntryType.Error, 101, 1);
+                        eventLog.WriteEntry($"{ProgramName} started. Repositioning.", EventLogEntryType.Information, 101, 1);
                     }
 
                     int processID = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
@@ -99,7 +105,16 @@ namespace AppPositioner
                         destinationMonitor = Screen.AllScreens[MonitorNumber - 1];
                     }
 
-                    MoveWindow(ptr, destinationMonitor.WorkingArea.X, destinationMonitor.WorkingArea.Y, destinationMonitor.WorkingArea.Width, destinationMonitor.WorkingArea.Height, true);
+                    if(FullScreen)
+                    {
+                        MoveWindow(ptr, destinationMonitor.WorkingArea.X, destinationMonitor.WorkingArea.Y, destinationMonitor.WorkingArea.Width, destinationMonitor.WorkingArea.Height, true);
+                    }
+                    else
+                    {
+                        MoveWindow(ptr, destinationMonitor.WorkingArea.X, destinationMonitor.WorkingArea.Y, destinationMonitor.WorkingArea.Width, destinationMonitor.WorkingArea.Height, true);
+                        MoveWindow(ptr, destinationMonitor.WorkingArea.X, destinationMonitor.WorkingArea.Y, Width, Height, true);
+                    }
+                    
 
                     using (EventLog eventLog = new EventLog("Application"))
                     {

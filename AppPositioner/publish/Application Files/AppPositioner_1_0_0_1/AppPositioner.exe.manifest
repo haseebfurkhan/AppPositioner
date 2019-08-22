@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="AppPositioner.exe" version="1.0.0.1" publicKeyToken="b45f1e4950bfd757" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="AppPositioner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="AppPositioner.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AppPositioner.exe" size="10712">
+      <assemblyIdentity name="AppPositioner" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>lpXQiPgEgSZxjG2UxeFx14MVmJbId9+LfjV6Vl4wjvs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="AppPositioner.exe.config" size="507">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dNKrPNa+ZWWupOGMk54+GCxXB9606HM5cxkT1MEAIVw=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=KCI\haseeb mohammed" issuerKeyHash="8e72979dc7e5f2b0d4ab87d3288aacf5ef6fe698" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>+/4GFj++ucDRtitXTmUOMpUjx9JTRjAnyX7tHcm6gUg=</DigestValue></Reference></SignedInfo><SignatureValue>b0IKcXwAD/irD5Q4uhIxAs+2DoSgs9y9Okrmry5hZPFullpf7YeJugEmGAWKJ2ZxlyjrTHlkT0jdsV7xl0RI5PyfNR6Jq7JBXi03ZiwL6vQvIthdhvHu6MP/h7UTYekYoed2Qtv4WgGeaS52N+nBeePz6QP66BIR1YLV8m9s75Q=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1gwNAc6Y5y+gp3fJ2S2f7Dr5cWRdXDN6qyHK4YbzyOmfCdJP/+ocE5sEAQoSipbdg4x8McgDS0rpiKBAolR6tShH7L8aqjEVnBzESeIvsmLTlSUgUbVpvEhUmax+j7QX+88PBkdL9QmqPY5w1B2gnudJR9XK+6n/YZwKisybNek=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="4881bac91ded7ec927304653d2c72395320e654e572bb6d1c0b9be3f1606fefb" Description="" Url=""><as:assemblyIdentity name="AppPositioner.exe" version="1.0.0.1" publicKeyToken="b45f1e4950bfd757" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=KCI\haseeb mohammed</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rV1vIM2g0YA4iUtoryaqMKkwtVCyeFOpEsgEkCPThKU=</DigestValue></Reference></SignedInfo><SignatureValue>ySOlrM4yly3n7GXggHXZ2rlOtnq5E3MKTStT0s1/fuO57WH2gouKwGqE421t3lk/jHDTj55RV1Nh5Hxyg1gwbd9FjHazUw7KiE1EhxUd9cjvBGlD3tWKyF0RdCbx6aYKj5EM2i62EzZiKaPyxGac+6tDGjcOSK+86Geey2mBi88=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1gwNAc6Y5y+gp3fJ2S2f7Dr5cWRdXDN6qyHK4YbzyOmfCdJP/+ocE5sEAQoSipbdg4x8McgDS0rpiKBAolR6tShH7L8aqjEVnBzESeIvsmLTlSUgUbVpvEhUmax+j7QX+88PBkdL9QmqPY5w1B2gnudJR9XK+6n/YZwKisybNek=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB5TCCAU6gAwIBAgIQd//SD/Qe3p5BSOOPi8q+sTANBgkqhkiG9w0BAQsFADAxMS8wLQYDVQQDHiYASwBDAEkAXABoAGEAcwBlAGUAYgAgAG0AbwBoAGEAbQBtAGUAZDAeFw0xOTAxMTQxODA5NTVaFw0yMDAxMTUwMDA5NTVaMDExLzAtBgNVBAMeJgBLAEMASQBcAGgAYQBzAGUAZQBiACAAbQBvAGgAYQBtAG0AZQBkMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWDA0BzpjnL6Cnd8nZLZ/sOvlxZF1cM3qrIcrhhvPI6Z8J0k//6hwTmwQBChKKlt2DjHwxyANLSumIoECiVHq1KEfsvxqqMRWcHMRJ4i+yYtOVJSBRtWm8SFSZrH6PtBf7zw8GR0v1Cao9jnDUHaCe50lH1cr7qf9hnAqKzJs16QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAHqj4VMtmx7WQ4gp7itRg0ciwJZQdGeNW6mn9E0KKWpIoDhnm6KKKEU2ijxL/kKMCDP2uWLsGVVtHVoezLTaAXxrMN+4yri7SGc1fdlGyr8SNqZKtkeKMxkWFeS72OEPLLh9eTaMS3MqkeVPrQhZffqpsSWZ8fTZQybFsouqgZ4j</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

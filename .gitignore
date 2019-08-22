@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/AppPositioner/v15/Server/sqlite3/storage.ide-wal
+/.vs/AppPositioner/v15/Server/sqlite3/storage.ide-shm
+/.vs/AppPositioner/v15/Server/sqlite3/storage.ide
+/.vs/AppPositioner/v15/Server/sqlite3/db.lock
